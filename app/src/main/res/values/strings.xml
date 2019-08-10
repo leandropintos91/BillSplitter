@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">BillSplitter</string>
+    <string name="new_instance">Nueva división</string>
+    <string name="delete_instance">Borrar</string>
+    <string name="participants_list_title">Participantes</string>
+    <string name="instances_list_title">Divisiones</string>
+    <string name="new_instance_name_title">Nombre de división</string>
+    <string name="new_instance_name_field">Nombre</string>
+    <string name="create">Crear</string>
+    <string name="cancel">Cancelar</string>
+    <string name="existing_instance_name_error">¡Este nombre ya existe!</string>
+    <string name="new_participant">Nuevo Participante</string>
+    <string name="price">Precio</string>
+    <string name="participant_name">Nombre</string>
+    <string name="new_participant_title">Nuevo Participante</string>
+    <string name="result">Resultado</string>
+    <string name="bill_detail_title">Detalle</string>
+    <string name="bill_detail_item_title">Items</string>
+    <string name="new_item">Nuevo Item</string>
+    <string name="item_description">Nombre</string>
+    <string name="calculate">Calcular</string>
+    <string name="must_fill_form">Debe ingresar todos los datos</string>
+    <string name="total">Total: %.2f</string>
+    <string name="total_per_capita">Total per capita: %.2f</string>
+    <string name="to_pay">Pagar: %.2f</string>
+    <string name="to_receive">Cobrar: %.2f</string>
 </resources>

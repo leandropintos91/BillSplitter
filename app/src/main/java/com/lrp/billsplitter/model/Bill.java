@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Bill {
 
-    String title;
+    String title = "";
     List<Item> itemList = new ArrayList<>();
     double total = 0;
 

@@ -1,16 +1,23 @@
 package com.lrp.billsplitter.model;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class SplitInstance {
+public class SplitInstance implements Comparable<SplitInstance> {
 
     Bill bill;
     List<Participant> participantList = new ArrayList<>();
     Double total;
     Double totalPerCapita;
+    private String title;
+
+    public SplitInstance() {
+        this.bill = new Bill();
+        this.participantList = new ArrayList<>();
+        totalPerCapita = 0.0;
+        total = 0.0;
+        title = "";
+    }
 
     public void addParticipant(Participant participant) {
         participantList.add(participant);
@@ -18,6 +25,10 @@ public class SplitInstance {
 
     public void setBill(Bill bill) {
         this.bill = bill;
+    }
+
+    public Bill getBill() {
+        return bill;
     }
 
     public Double getTotal() {
@@ -62,5 +73,26 @@ public class SplitInstance {
                 participant.setToReceive(0.0);
             }
         }
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    @Override
+    public int compareTo(SplitInstance o) {
+        return this.getTitle().compareTo(o.getTitle());
+    }
+
+    public List<Participant> getParticipantList() {
+        return participantList;
+    }
+
+    public void setParticipantList(List<Participant> participantList) {
+        this.participantList = participantList;
     }
 }
